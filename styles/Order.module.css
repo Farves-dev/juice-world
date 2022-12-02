@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--light-green);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.details > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(5rem, 23vw, 30rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.details > div > span:last-child {
+  color: var(--light-green);
+}
+
+.statusContainer {
+  display: grid;
+  row-gap: clamp(1rem, 5vw, 11rem);
+  column-gap: clamp(5rem, 20vw, 11rem);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pending {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  margin-top: 1rem;
+  color: var(--dark-green);
+  background-color: var(--light-green);
+}
+
+.receipt {
+  width: clamp(4rem, 6vw, 4.7rem);
+  height: clamp(4rem, 6vw, 4.7rem);
+}
+
+.juice {
+  width: clamp(6rem, 7vw, 6rem);
+  height: clamp(6rem, 7vw, 6rem);
+}
+
+.spinner {
+  width: clamp(6rem, 7vw, 6rem);
+  height: clamp(6rem, 7vw, 6rem);
+  top: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.completed {
+  margin-top: 4rem;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.bike {
+  width: clamp(5rem, 7vw, 5.5rem);
+  height: clamp(5rem, 7vw, 5.5rem);
+}
+
+.box {
+  width: clamp(8rem, 7vw, 7rem);
+  height: clamp(8rem, 7vw, 7rem);
+}
+
+.status > span:not(.delSpan, .pending) {
+  color: var(--light-green);
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  margin-top: 0.5rem;
+}
+
+.delSpan {
+  margin-top: -1.8rem;
+  color: var(--light-green);
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+.status:nth-child(2) > span {
+  margin-top: -0.2rem;
+}
+
+@media screen and (min-width: 40em) {
+  .statusContainer {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .statusContainer > .status:first-child {
+    margin-top: 6.1rem;
+  }
+  .status:nth-child(2) {
+    margin-top: 0.8rem;
+  }
+  .status:nth-child(3) {
+    margin-top: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .statusContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

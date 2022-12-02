@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Gerant";
+  src: url(../assets/fonts/Gerant-GOxwP.otf);
+}
+
+.container {
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gerant", serif;
+  font-size: clamp(5rem, 7.5vw, 9rem);
+  margin-top: 1rem;
+}
+
+.healthy {
+  color: var(--light-green);
+}
+
+.description {
+  font-size: min(1.8rem, 5vw);
+  margin-bottom: 2.3rem;
+  margin-top: -0.3rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  font-size: min(1.5rem, 5vw);
+  margin-bottom: 5rem;
+  transition: 0.4s;
+}
+
+.btn:hover{
+  background: var(--light-green);
+  color: var(--dark-green);
+  cursor: pointer;
+}
+
+.right {
+  width: clamp(20rem, 57vw, 40rem);
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  display: flex;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1023px) {
+  .container {
+    text-align: left;
+    display: flex;
+  }
+}

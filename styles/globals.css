@@ -1,0 +1,84 @@
+html,
+body {
+  color: var(--dark-green);
+  background: var(--background-color);
+  font-family: "Comic Neue", cursive;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+img {
+  user-select: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #a3ffc8, #215a39);
+  height: 100vh;
+}
+
+::selection {
+  background-color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #ffffff;
+}
+
+.container {
+  padding: 1rem min(3vw, 2rem);
+}
+
+:root {
+  --dark-green: #215a39;
+  --light-gradient-green: #a3ffc8;
+  --light-green: #baffd6;
+
+  --normal-font: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-green);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-green);
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  width: fit-content;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+  color: var(--light-green);
+  background-color: var(--dark-green);
+  font-size: var(--normal-font);
+  font-family: "Comic Neue", cursive;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--dark-green);
+  transition: 0.4s;
+}
+
+.link:hover {
+  color: var(--light-green);
+}

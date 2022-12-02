@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.juiceDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.juicePrice > span:first-child {
+  margin-right: 3px;
+}
+
+.juiceDetails > h2 {
+  color: var(--light-green);
+  font-size: clamp(2.2rem, 4vw, 4.5rem);
+}
+
+.juiceDetails > p {
+  font-size: clamp(1.1rem, 3vw, 2rem);
+  font-weight: lighter;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.minus,
+.plus {
+  user-select: none;
+  transition: 0.3s;
+}
+
+.minus:hover,
+.plus:hover {
+  scale: 1.2;
+  cursor: pointer;
+  color: var(--light-green);
+}
+
+.btn {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-top: 1rem;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  color: var(--dark-green);
+  background-color: var(--light-green);
+  cursor: pointer;
+}
+
+.juiceImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.juiceImg > img {
+  width: clamp(18rem, 45vw, 25rem);
+  height: clamp(20rem, 47vw, 27rem);
+  box-shadow: #215a39 6px 6px 35px 3px;
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 40em) {
+  .wrapper {
+    padding-bottom: 13rem;
+    flex-direction: row;
+  }
+  .juiceDetails {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .container {
+    padding-top: 4rem;
+  }
+  .priceWrapper {
+    justify-content: left;
+  }
+  .juicePrice {
+    margin-right: 3rem;
+  }
+}

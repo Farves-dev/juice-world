@@ -1,0 +1,134 @@
+.header {
+  font-size: var(--normal-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: min(10vw, 1rem);
+}
+
+.logo {
+  margin-left: -1.5rem;
+  cursor: pointer;
+  width: min(35vw, 16rem);
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu > li {
+  list-style: none;
+  transition: 0.4s;
+  font-size: 1.6rem;
+}
+
+.menu > li:hover {
+  color: var(--light-green);
+  cursor: pointer;
+}
+
+.btn {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.rightSide {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cartWrapper {
+  cursor: pointer;
+}
+
+.receipt {
+  cursor: pointer;
+}
+
+.cart {
+  color: var(--light-green);
+  position: relative;
+  display: flex;
+  z-index: -1;
+  font-size: 1.8rem;
+  margin-top: -0.5rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--dark-green);
+  transition: none;
+}
+
+.badge {
+  position: absolute;
+  display: flex;
+  background-color: var(--light-green);
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--dark-green);
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  right: -0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    visibility: visible;
+    opacity: 1;
+    color: var(--light-green);
+    cursor: pointer;
+    font-size: 1.9rem;
+    transition: 0.5s;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #a3ffc8, #215a39);
+    transform: translateY(-100vh);
+    transition: 0.5s;
+    font-size: 2rem;
+  }
+  .mobMenu {
+    position: fixed;
+    display: flex;
+    gap: 2rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #a3ffc8, #215a39);
+    transition: 0.5s;
+    list-style: none;
+    transform: none;
+    font-size: 2rem;
+  }
+  .mobMenu > li {
+    transition: 0.3s;
+  }
+  .mobMenu > li:hover {
+    color: var(--light-green);
+    cursor: pointer;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 2rem;
+    transition: 0.5s;
+    right: 2rem;
+  }
+}

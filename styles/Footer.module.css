@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 2px solid var(--dark-green);
+  margin-top: 2rem;
+  margin-inline: -2rem;
+}
+
+.container > span {
+  font-size: min(1.5rem, 6vw);
+  color: var(--dark-green);
+  margin-left: min(3vw, 1rem);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: min(3vw, 1rem);
+  gap: 1rem;
+}
+
+.socials > a {
+  color: var(--light-green);
+  cursor: pointer;
+  font-size: min(2.5rem, 8vw);
+}
