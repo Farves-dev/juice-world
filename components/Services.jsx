@@ -2,7 +2,7 @@ import React from "react";
 import css from "../styles/Services.module.css";
 import mobile from "../assets/mobile.png";
 import lemonade from "../assets/lemonade.png";
-import scooter from "../assets/scooter.png";
+import scooter from "../assets/Scooter.png";
 import Image from "next/image";
 
 const Services = () => {
