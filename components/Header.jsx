@@ -19,17 +19,19 @@ const Header = () => {
   return (
     <div className={css.header}>
       <div className={css.logo}>
-        <a href="/">
-          <>
-            <Image
-              src={logo}
-              alt="Juice World"
-              title="Juice World"
-              width={230}
-              height={100}
-            />
-          </>
-        </a>
+        <Link href="/">
+          <a>
+            <>
+              <Image
+                src={logo}
+                alt="Juice World"
+                title="Juice World"
+                width={230}
+                height={100}
+              />
+            </>
+          </a>
+        </Link>
       </div>
 
       <ul
@@ -37,9 +39,9 @@ const Header = () => {
         onClick={() => setIsMob(false)}
       >
         <li>
-          <a className="link" href="/">
-            Home
-          </a>
+          <Link href="/">
+            <a className="link">Home</a>
+          </Link>
         </li>
         <li>
           <Link href="/#menu">
