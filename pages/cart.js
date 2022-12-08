@@ -6,6 +6,7 @@ import { FaTimes } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import OrderModal from "../components/OrderModal";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Cart = () => {
   const cartData = useStore((state) => state.cart);

@@ -22,7 +22,7 @@ const Hero = () => {
           drink.
         </div>
         <Link href="#menu">
-          <button className={`btn ${css.btn}`}>Let's Drink</button>
+          <button className={`btn ${css.btn}`}>Let&apos;s Drink</button>
         </Link>
       </div>
 
