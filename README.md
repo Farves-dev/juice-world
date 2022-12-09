@@ -4,13 +4,13 @@ Juice World is an amazing fresh juice ordering web app. You can get different va
 
 ## Technologies Used
 
-- next js
-- react js
-- stripe
-- sanity
-- zustand
-- css modules
-- vite
+- Next JS
+- React JS
+- Stripe
+- Sanity
+- Zustand
+- CSS Modules
+- Vite
 
 ![Home Page](./assets/screenshots/Screenshot%202022-12-09%20070249.png)
 ![Services](./assets/screenshots/Screenshot%202022-12-09%20070329.png)
